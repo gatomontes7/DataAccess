@@ -17,7 +17,7 @@ namespace DataAccess.UnidadesDeTrabajo
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
-            optionsBuilder.UseSqlServer("Server=MSI\\SQLEXPRESS;User ID=sa;Password=1234;Database=bd_Demo;");
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;User ID=sa;Password=1234;Database=bd_Demo;");
 
             _DBcontext = new ApplicationDbContext(optionsBuilder.Options);
 
